@@ -10,7 +10,7 @@ app = FastAPI()
 # Include img_text router with a prefix for organization
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Allow requests from localhost:3000
+    allow_origins=["*"],  # Allow requests from localhost:3000
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods
     allow_headers=["*"],  # Allow all headers
