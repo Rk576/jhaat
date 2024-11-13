@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
-from backend.routers import img_text  
-from backend.routers import audio_txt
-from backend.routers import video_txt
-from backend.routers import exe_txt
+from routers import img_text  
+from routers import audio_txt
+from routers import video_txt
+from routers import exe_txt
 
 app = FastAPI()
 
